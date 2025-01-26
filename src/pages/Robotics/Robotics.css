@@ -35,3 +35,14 @@
     justify-content: center;
     gap: 5px
 }
+
+.description {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    line-clamp: 3;
+    display: box;
+    box-orient: vertical;
+    text-overflow: ellipsis
+}

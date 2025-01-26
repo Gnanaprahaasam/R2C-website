@@ -1,5 +1,12 @@
 @import"https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500;600;700&family=Marcellus&display=swap";
 
+:root {
+    --light-color: #FBF5DD;
+    --dark-color: #16404D;
+    --dark-lite: #9cafaa;
+    --key-word: #DDA853;
+}
+
 h1,
 h2,
 h3,
@@ -11,7 +18,7 @@ h6 {
 
 body {
     margin: 0;
-    padding: 0
+    padding: 0;
 }
 
 .header {
@@ -32,8 +39,15 @@ a.nav-link {
     color: #0acb0a !important
 }
 
+.footer {
+    font-family: "Cormorant", serif;
+    background-color: var(--dark-color);
+    color: var(--light-color);
+}
 
-
+.footer-heading {
+    color: var(--dark-lite)
+}
 
 .bold {
     font-weight: 700
@@ -44,25 +58,12 @@ a.nav-link {
 }
 
 .author {
-    color: #9cafaa
+    color: var(--dark-lite)
 }
 
 .keyword {
-    color: #dba979
+    color: var(--key-word);
 }
-
-
-.description {
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    overflow: hidden;
-    -webkit-box-orient: vertical;
-    line-clamp: 3;
-    display: box;
-    box-orient: vertical;
-    text-overflow: ellipsis
-}
-
 
 
 
