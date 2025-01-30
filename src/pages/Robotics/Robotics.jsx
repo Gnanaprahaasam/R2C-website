@@ -70,8 +70,8 @@ const Robotics = () => {
                                 <img src={lakshmipriya} alt="userProfile" class="img-fluid float-start m-2 me-3" width="100" />
                                 <div className="">
                                     <p class="text-wrap">"
-                                    With over 13 years of experience, L. Lakshmipriya, a Software Engineer at TCS, has made significant contributions to various projects, demonstrating expertise in software development. She has been involved in all stages of backend application development, including analysis, production, and support."</p>
-                                    <div class="author float-end align-self-bottom"> -Ms.Lakshmipriya, Ex-Software Engineer, TCS</div>
+                                        With over 13 years of experience, L. Lakshmipriya, a Software Engineer at TCS, has made significant contributions to various projects, demonstrating expertise in software development. She has been involved in all stages of backend application development, including analysis, production, and support."</p>
+                                    <div class="author float-end align-self-bottom"> -Mrs.Lakshmipriya, Software Engineer</div>
                                 </div>
                             </div>
                         </div>
@@ -80,25 +80,26 @@ const Robotics = () => {
             </div>
 
             <div class=" container mb-5">
-                <h2 class="mb-3">Choose from <span class="keyword">Robotics</span>, <span class="keyword">Coding</span> , or <span class="keyword">Drones &amp; Satellites</span>.</h2>
-                <h3 class="mb-3">Both Online and Offline Robotics Courses for Kids.</h3>
-                <div class="row mb-5 g-4">
+                <h2 class="mb-3">Choose Between <span class="keyword">Robotics</span>, <span class="keyword">Coding</span> and <span class="keyword">Drones</span>.</h2>
+                <h3 class="mb-2">Robotics Courses for Kids.</h3>
+                <h6 className="mb-3">Mode <span>Online / Offline</span></h6>
+                <div class="row mb-3 g-4">
                     <div class=" col-sm-12 col-md-6 col-lg-4 ">
                         <div class="shadow p-2 rounded-4 h-100">
                             <div class="image-container">
                                 <img src={roboticStart} alt="roboticsStart" class="thumbnail-image rounded-4" />
                             </div>
                             <div class=" p-3">
-                                <h5 class="keyword">Junior Level</h5>
+                                <h5 class="keyword">Basic Level</h5>
                                 <p class="description">The perfect course for your kid to start mastering skills in the world of Robotics</p>
                             </div>
                             <div class="row px-3 flex-nowrap">
                                 <div class="col d-flex flex-column fw-bold align-items-center">
-                                    <span class="keyword">30+</span>
+                                    <span class="keyword">10+</span>
                                     <span>Classes</span>
                                 </div>
                                 <div class="col d-flex flex-column fw-bold  align-items-center">
-                                    <span class="keyword">10+</span>
+                                    <span class="keyword">5+</span>
                                     <span>Projects</span>
                                 </div>
                                 <div class="col">
@@ -132,10 +133,10 @@ const Robotics = () => {
                                 <img src={roboticsMiddle} alt="roboticsMiddle" class="thumbnail-image rounded-4" />
                             </div>
                             <div class=" p-3">
-                                <h5 class="keyword">Senior Level</h5>
+                                <h5 class="keyword">Intermediate Level</h5>
                                 <p class="description">The ideal course for your child to deepen their skills and expertise in Robotics</p></div><div class="row px-3 flex-nowrap">
                                 <div class="col d-flex flex-column fw-bold align-items-center">
-                                    <span class="keyword">30+</span>
+                                    <span class="keyword">20+</span>
                                     <span>Classes</span>
                                 </div>
                                 <div class="col d-flex flex-column fw-bold  align-items-center">
@@ -166,7 +167,7 @@ const Robotics = () => {
                             <div class="image-container">
                                 <img src={roboticsAdvance} alt="roboticsAdvance" class="thumbnail-image rounded-4" />
                             </div><div class=" p-3">
-                                <h5 class="keyword">Super Senior Level</h5>
+                                <h5 class="keyword">Advance Level</h5>
                                 <p class="description">The advanced course for your child to excel and become a master in the world of Robotics.</p>
                             </div><div class="row px-3 flex-nowrap">
                                 <div class="col d-flex flex-column fw-bold align-items-center">
@@ -174,7 +175,7 @@ const Robotics = () => {
                                     <span>Classes</span>
                                 </div>
                                 <div class="col d-flex flex-column fw-bold  align-items-center">
-                                    <span class="keyword">10+</span>
+                                    <span class="keyword">15+</span>
                                     <span>Projects</span>
                                 </div>
                                 <div class="col">
@@ -199,13 +200,138 @@ const Robotics = () => {
                             </div>
                         </div>
                     </div>
+                </div>
+                <h3 class="mb-2">Coding Courses for Kids.</h3>
+                <h6 className="mb-3">Mode Online / Offline</h6>
+                <div class="row mb-3 g-4">
+                    <div class="col-sm-12 col-md-6 col-lg-4 ">
+                        <div class="shadow p-2 rounded-4  h-100">
+                            <div class="image-container">
+                                <img src={codingStart} alt="codingStart" class="thumbnail-image rounded-4" />
+                            </div>
+                            <div class=" p-3">
+                                <h5 class="keyword">Basic Level</h5>
+                                <p class="description">The perfect course for your kid to start mastering skills in the world of Coding</p>
+                            </div>
+                            <div class="row px-3 flex-nowrap">
+                                <div class="col d-flex flex-column fw-bold align-items-center">
+                                    <span class="keyword">10+</span>
+                                    <span>Classes</span>
+                                </div>
+                                <div class="col d-flex flex-column fw-bold  align-items-center">
+                                    <span class="keyword">5+</span>
+                                    <span>Projects</span>
+                                </div>
+                                <div class="col">
+                                    <div class="col d-flex flex-column fw-bold  align-items-center">
+                                        <span class="keyword">10+</span>
+                                        <span>Quizzes</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" row p-3">
+                                <div class="align-self-end">
+                                    <div class="d-flex flex-wrap text-break ">
+                                        <h6 class="bold">Strarts from <span class="text-decoration-line-through">Rs 1999/</span><span class="keyword"> Rs 999/-</span></h6>
+                                    </div>
+                                    <div>
+                                        <a href="https://wa.me/+917904189145" target="_blank" rel="noopener noreferrer" class="text-decoration-none">
+                                            <button class="inquire-btn">  <BsWhatsapp size={20} /> Click here to inquire</button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4  ">
+                        <div class="shadow p-2 rounded-4  h-100">
+                            <div class="image-container">
+                                <img src={codingMiddle} alt="codingMiddle" class="thumbnail-image rounded-4" />
+                            </div>
+                            <div class=" p-3">
+                                <h5 class="keyword">Intermediate Level</h5>
+                                <p class="description">The ideal course for your child to deepen their skills and expertise in Coding</p>
+                            </div>
+                            <div class="row px-3 flex-nowrap">
+                                <div class="col d-flex flex-column fw-bold align-items-center">
+                                    <span class="keyword">20+</span>
+                                    <span>Classes</span>
+                                </div>
+                                <div class="col d-flex flex-column fw-bold  align-items-center">
+                                    <span class="keyword">10+</span>
+                                    <span>Projects</span>
+                                </div>
+                                <div class="col">
+                                    <div class="col d-flex flex-column fw-bold  align-items-center"><span class="keyword">10+</span>
+                                        <span>Quizzes</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row p-3">
+                                <div class="align-self-end">
+                                    <div class="d-flex flex-wrap text-break">
+                                        <h6 class="bold">Strarts from <span class="text-decoration-line-through">Rs 2999/</span><span class="keyword"> Rs 1999/-</span>
+                                        </h6>
+                                    </div>
+                                    <div>
+                                        <a href="https://wa.me/+917904189145" target="_blank" rel="noopener noreferrer" class="text-decoration-none">
+                                            <button class="inquire-btn">
+                                                <BsWhatsapp size={20} />
+                                                Click here to inquire
+                                            </button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 ">
+                        <div class="shadow p-2 rounded-4  h-100">
+                            <div class="image-container">
+                                <img src={codingAdvance} alt="codingAdvance" class="thumbnail-image rounded-4" />
+                            </div><div class=" p-3">
+                                <h5 class="keyword">Advance Level</h5>
+                                <p class="description">The advanced course for your child to excel and become a master in the world of Coding.</p>
+                            </div><div class="row px-3 flex-nowrap">
+                                <div class="col d-flex flex-column fw-bold align-items-center"><span class="keyword">30+</span>
+                                    <span>Classes</span>
+                                </div>
+                                <div class="col d-flex flex-column fw-bold  align-items-center">
+                                    <span class="keyword">30+</span><span>Projects</span>
+                                </div>
+                                <div class="col">
+                                    <div class="col d-flex flex-column fw-bold  align-items-center">
+                                        <span class="keyword">15+</span>
+                                        <span>Quizzes</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" row p-3 ">
+                                <div class="align-self-end">
+                                    <div class="d-flex flex-wrap text-break">
+                                        <h6 class="bold">Strarts from <span class="text-decoration-line-through">Rs 3999/</span><span class="keyword"> Rs 2999/-</span>
+                                        </h6>
+                                    </div>
+                                    <div>
+                                        <a href="https://wa.me/+917904189145" target="_blank" rel="noopener noreferrer" class="text-decoration-none">
+                                            <button class="inquire-btn">  <BsWhatsapp size={20} /> Click here to inquire</button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h3 class="mb-2">Drones Courses for Kids.</h3>
+                <h6 className="mb-3">Mode Online / Offline</h6>
+                <div className="row mb-3 g-4">
                     <div class="col-sm-12 col-md-6 col-lg-4 ">
                         <div class="shadow p-2 rounded-4  h-100">
                             <div class="image-container">
                                 <img src={drone} alt="drone" class="thumbnail-image rounded-4" />
                             </div>
                             <div class=" p-3">
-                                <h5 class="keyword">Advance Science</h5>
+                                <h5 class="keyword">Drones</h5>
                                 <p class="description">The advanced drone course to elevate your child’s skills and help them dominate the skies of technology.</p>
                             </div>
                             <div class="row px-3 flex-nowrap"><div class="col d-flex flex-column fw-bold align-items-center">
@@ -238,7 +364,7 @@ const Robotics = () => {
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-12 col-md-6 col-lg-4 ">
+                    {/* <div class="col-sm-12 col-md-6 col-lg-4 ">
                         <div class="shadow p-2 rounded-4  h-100">
                             <div class="image-container">
                                 <img src={statellite} alt="Satellite" class="thumbnail-image rounded-4" />
@@ -276,127 +402,7 @@ const Robotics = () => {
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <h3 class="mb-3">Both Online and Offline Coding Courses for Kids.</h3>
-                <div class="row mb-3 g-4">
-                    <div class="col-sm-12 col-md-6 col-lg-4 ">
-                        <div class="shadow p-2 rounded-4  h-100">
-                            <div class="image-container">
-                                <img src={codingStart} alt="codingStart" class="thumbnail-image rounded-4" />
-                            </div>
-                            <div class=" p-3">
-                                <h5 class="keyword">Junior Level</h5>
-                                <p class="description">The perfect course for your kid to start mastering skills in the world of Coding</p>
-                            </div>
-                            <div class="row px-3 flex-nowrap">
-                                <div class="col d-flex flex-column fw-bold align-items-center">
-                                    <span class="keyword">30+</span>
-                                    <span>Classes</span>
-                                </div>
-                                <div class="col d-flex flex-column fw-bold  align-items-center">
-                                    <span class="keyword">10+</span>
-                                    <span>Projects</span>
-                                </div>
-                                <div class="col">
-                                    <div class="col d-flex flex-column fw-bold  align-items-center">
-                                        <span class="keyword">10+</span>
-                                        <span>Quizzes</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class=" row p-3">
-                                <div class="align-self-end">
-                                    <div class="d-flex flex-wrap text-break ">
-                                        <h6 class="bold">Strarts from <span class="text-decoration-line-through">Rs 1999/</span><span class="keyword"> Rs 999/-</span></h6>
-                                    </div>
-                                    <div>
-                                        <a href="https://wa.me/+917904189145" target="_blank" rel="noopener noreferrer" class="text-decoration-none">
-                                            <button class="inquire-btn">  <BsWhatsapp size={20} /> Click here to inquire</button>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-12 col-md-6 col-lg-4  ">
-                        <div class="shadow p-2 rounded-4  h-100">
-                            <div class="image-container">
-                                <img src={codingMiddle} alt="codingMiddle" class="thumbnail-image rounded-4" />
-                            </div>
-                            <div class=" p-3">
-                                <h5 class="keyword">Senior Level</h5>
-                                <p class="description">The ideal course for your child to deepen their skills and expertise in Coding</p>
-                            </div>
-                            <div class="row px-3 flex-nowrap">
-                                <div class="col d-flex flex-column fw-bold align-items-center">
-                                    <span class="keyword">30+</span>
-                                    <span>Classes</span>
-                                </div>
-                                <div class="col d-flex flex-column fw-bold  align-items-center">
-                                    <span class="keyword">10+</span>
-                                    <span>Projects</span>
-                                </div>
-                                <div class="col">
-                                    <div class="col d-flex flex-column fw-bold  align-items-center"><span class="keyword">10+</span>
-                                        <span>Quizzes</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row p-3">
-                                <div class="align-self-end">
-                                    <div class="d-flex flex-wrap text-break">
-                                        <h6 class="bold">Strarts from <span class="text-decoration-line-through">Rs 2999/</span><span class="keyword"> Rs 1999/-</span>
-                                        </h6>
-                                    </div>
-                                    <div>
-                                        <a href="https://wa.me/+917904189145" target="_blank" rel="noopener noreferrer" class="text-decoration-none">
-                                            <button class="inquire-btn">
-                                                <BsWhatsapp size={20} />
-                                                Click here to inquire
-                                            </button>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-12 col-md-6 col-lg-4 ">
-                        <div class="shadow p-2 rounded-4  h-100">
-                            <div class="image-container">
-                                <img src={codingAdvance} alt="codingAdvance" class="thumbnail-image rounded-4" />
-                            </div><div class=" p-3">
-                                <h5 class="keyword">Super Senior Level</h5>
-                                <p class="description">The advanced course for your child to excel and become a master in the world of Coding.</p>
-                            </div><div class="row px-3 flex-nowrap">
-                                <div class="col d-flex flex-column fw-bold align-items-center"><span class="keyword">30+</span>
-                                    <span>Classes</span>
-                                </div>
-                                <div class="col d-flex flex-column fw-bold  align-items-center">
-                                    <span class="keyword">10+</span><span>Projects</span>
-                                </div>
-                                <div class="col">
-                                    <div class="col d-flex flex-column fw-bold  align-items-center">
-                                        <span class="keyword">10+</span>
-                                        <span>Quizzes</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class=" row p-3 ">
-                                <div class="align-self-end">
-                                    <div class="d-flex flex-wrap text-break">
-                                        <h6 class="bold">Strarts from <span class="text-decoration-line-through">Rs 3999/</span><span class="keyword"> Rs 2999/-</span>
-                                        </h6>
-                                    </div>
-                                    <div>
-                                        <a href="https://wa.me/+917904189145" target="_blank" rel="noopener noreferrer" class="text-decoration-none">
-                                            <button class="inquire-btn">  <BsWhatsapp size={20} /> Click here to inquire</button>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    </div> */}
                 </div>
             </div>
             <div class="container mb-5">

@@ -5,6 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Robotics from './pages/Robotics/Robotics';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import Home from './pages/Home/Home';
 
 function App() {
 
@@ -13,7 +14,7 @@ function App() {
     <HashRouter>
       <Header />
       <Routes>
-        {/* <Route path='/' element={<Home />} /> */}
+        <Route path='/' element={<Home />} />
         <Route path='/robotics' element={<Robotics />} />
       </Routes>
       <Footer />

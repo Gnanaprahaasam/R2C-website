@@ -5,9 +5,9 @@ const Footer = () => {
             <div className="row pt-4 ">
                 <div className="col-12 col-md-4 mb-3">
                     <div className="h-100">
-                        <h2 className="bold mb-3 footer-heading">R2C Technology</h2>
+                        <h2 className="bold mb-3 footer-heading">R2C Technologies</h2>
                         <div className="">
-                            Established in 2020 as Ramanujam Coaching Centre in Udumalpet, R2C Technology has become a prominent hub for technical learning and career development, catering to students and interns.
+                            Established in 2020, R2C Technologies has emerged as a leading center for technical education and career advancement, serving both students and interns.
                         </div>
                     </div>
                 </div>
@@ -28,10 +28,9 @@ const Footer = () => {
                 <div className="col-12 col-sm-6 col-md-4">
                     <div className="">
                         <h5 className="bold footer-heading">Open & Close (Timing)</h5>
-                        <span className="d-flex text-nowrap gap-2">from <h5 className="keyword">Monday</h5> to <h5 className="keyword">Sunday</h5></span>
-                        <span>from 10.00 AM to 11.00 PM</span>
+                        <span className="d-flex text-nowrap gap-2">from <h5 className="keyword">Monday</h5> to <h5 className="keyword">Satruday</h5></span>
+                        <span>from 10.00 AM to 07.00 PM</span>
                     </div>
-
                 </div>
             </div>
 

@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 import { Navbar, Nav } from "react-bootstrap";
 import { Link, useLocation } from "react-router-dom";
-import logo from "../assets/logo.png"; 
+import logo from "../assets/logo.png";
 
 const Header = () => {
     const location = useLocation();
-    const [expanded, setExpanded] = useState(false); 
+    const [expanded, setExpanded] = useState(false);
 
     const handleSelect = () => {
-        setExpanded(false); 
+        setExpanded(false);
     };
 
     return (
@@ -16,15 +16,17 @@ const Header = () => {
             collapseOnSelect
             expand="lg"
             className="header px-5"
-            expanded={expanded} 
+            expanded={expanded}
         >
             <>
-                <Navbar.Brand as={Link} to={"/"}>
+                <Navbar.Brand as={Link} to={"/"} className="d-flex align-items-center flex-nowrap text-nowrap gap-2">
                     <img src={logo} alt="logo" width={"80"} />
+                    <span className="logo">R2C</span>
+                    <span className="logo-name">Robotics</span>
                 </Navbar.Brand>
                 <Navbar.Toggle
                     aria-controls="responsive-navbar-nav"
-                    onClick={() => setExpanded(!expanded)} 
+                    onClick={() => setExpanded(!expanded)}
                 />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="m-auto gap-5 navLinks">
@@ -32,7 +34,7 @@ const Header = () => {
                             as={Link}
                             to={"/training"}
                             className={location.pathname === "/training" ? `active-link` : ""}
-                            onClick={handleSelect} 
+                            onClick={handleSelect}
                         >
                             Training
                         </Nav.Link>
@@ -40,7 +42,7 @@ const Header = () => {
                             as={Link}
                             to={"/internship"}
                             className={location.pathname === "/internship" ? `active-link` : ""}
-                            onClick={handleSelect} 
+                            onClick={handleSelect}
                         >
                             Internship
                         </Nav.Link>
@@ -48,7 +50,7 @@ const Header = () => {
                             as={Link}
                             to={"/industries"}
                             className={location.pathname === "/industries" ? `active-link` : ""}
-                            onClick={handleSelect} 
+                            onClick={handleSelect}
                         >
                             Industries
                         </Nav.Link>
@@ -56,7 +58,7 @@ const Header = () => {
                             as={Link}
                             to={"/service"}
                             className={location.pathname === "/service" ? `active-link` : ""}
-                            onClick={handleSelect} 
+                            onClick={handleSelect}
                         >
                             Service
                         </Nav.Link>
