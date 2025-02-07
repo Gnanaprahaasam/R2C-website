@@ -15,21 +15,21 @@ const Header = () => {
         <Navbar
             collapseOnSelect
             expand="lg"
-            className="header px-5"
+            className="header px-sm-5 px-1"
             expanded={expanded}
         >
             <>
                 <Navbar.Brand as={Link} to={"/"} className="d-flex align-items-center flex-nowrap text-nowrap gap-2">
                     <img src={logo} alt="logo" width={"80"} />
                     <span className="logo">R2C</span>
-                    <span className="logo-name">Robotics</span>
+                    <span className="logo-name">Technology</span>
                 </Navbar.Brand>
                 <Navbar.Toggle
                     aria-controls="responsive-navbar-nav"
                     onClick={() => setExpanded(!expanded)}
                 />
                 <Navbar.Collapse id="responsive-navbar-nav">
-                    <Nav className="m-auto gap-5 navLinks">
+                    <Nav className="m-sm-auto mx-2 gap-md-5 navLinks">
                         <Nav.Link
                             as={Link}
                             to={"/training"}
