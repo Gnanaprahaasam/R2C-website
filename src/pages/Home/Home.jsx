@@ -88,10 +88,10 @@ const TeamData = () => {
 const Home = () => {
 
     return (
-        <div className="font-style overflow-hidden">
+        <div className="font-style overflow-hidden m-0">
             <div className="position-relative">
                 <img src={heroSection} alt="A.P.J kalam" className=" hero-image" />
-                <div className="position-absolute bottom-0  pb-5 quotes m-auto mx-5 px-sm-5">
+                <div className="position-absolute bottom-0 end-0  pb-5 quotes m-auto mx-5 px-sm-5">
                     என்னால் முடியும் என்ற மன உறுதியை மாணவர்களிடையே உருவாக்குவதே கல்வியின் மிக உயர்ந்த நோக்கமாகும். <br /> <span className="float-end">– A.P.J அப்துல் கலாம்</span>
                 </div>
             </div>
@@ -124,7 +124,7 @@ const Home = () => {
 
 
             {/* Our Service */}
-            <div className=" container-fluid mb-3">
+            <div className=" container-fluid mb-3 m-0">
                 <h2 className="text-center py-2 keyword">
                     <span className="text-black">Our</span> Services
                 </h2>
@@ -176,7 +176,7 @@ const Home = () => {
                         <div className="shadow-sm bg-white h-100 p-2">
                             <div className=" d-flex flex-wrap justify-content-center align-items-center">
                                 <div className="service-image-container col-12 col-sm-6 px-4">
-                                    <img src={labsetup} alt="Lab Setup" className="service-image lab-shadow mt-0 mt-sm-4" />
+                                    <img src={labsetup} alt="Lab Setup" className="service-image lab-shadow mt-0 mt-sm-5" />
                                 </div>
                                 <div className="col-12 col-sm-6 ">
                                     <h5 className="text-center bold py-3">Lab Setup</h5>

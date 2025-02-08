@@ -15,7 +15,7 @@ const Header = () => {
         <Navbar
             collapseOnSelect
             expand="lg"
-            className="header px-sm-5 px-1"
+            className="header px-sm-5 px-1 shadow-sm"
             expanded={expanded}
         >
             <>

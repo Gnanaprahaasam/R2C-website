@@ -6,6 +6,8 @@ import Robotics from './pages/Robotics/Robotics';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './pages/Home/Home';
+import Training from './pages/Training/Training';
+import Intership from './pages/Intership/Intership';
 
 function App() {
 
@@ -16,6 +18,8 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/robotics' element={<Robotics />} />
+        <Route path='/training' element={<Training />} />
+        <Route path='/internship' element={<Intership />} />
       </Routes>
       <Footer />
     </HashRouter>

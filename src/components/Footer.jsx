@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 const Footer = () => {
     return (
@@ -33,7 +34,12 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-
+            <hr />
+            <div class="d-flex justify-content-center align-items-center flex-wrap pb-2">
+                <div>Copyright &#169; 2025 &nbsp; </div>
+                <div>| &nbsp;<Link to="https://R2CTechnology.com" className="keyword">www.R2CTechnology.com</Link> &nbsp; |</div>
+                <div>&nbsp; All rights reserved</div>
+            </div>
         </div>
     );
 }
