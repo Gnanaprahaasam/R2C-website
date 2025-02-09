@@ -9,6 +9,10 @@ import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
+import { useRef } from "react";
+import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
+import { useState } from "react";
+import { useEffect } from "react";
 
 const TeamImage = [about, about1, about2, about3];
 const CustomLeftArrow = ({ onClick }) => {
@@ -21,9 +25,9 @@ const CustomLeftArrow = ({ onClick }) => {
                 zIndex: 999,
                 position: 'absolute',
                 right: '65px',
-                bottom: '7%',
+                bottom: '10%',
                 cursor: 'pointer',
-                padding: '5px',
+                padding: '8px',
                 background: " rgba(122, 236, 193, 0.253)",
                 color: "white",
             }}
@@ -43,9 +47,9 @@ const CustomRightArrow = ({ onClick }) => {
                 zIndex: 999,
                 position: 'absolute',
                 right: '20px',
-                bottom: '7%',
+                bottom: '10%',
                 cursor: 'pointer',
-                padding: '5px',
+                padding: '8px',
                 background: " rgba(122, 236, 193, 0.253)",
                 color: "white",
             }}
@@ -82,7 +86,89 @@ const TeamData = () => {
     )
 }
 
+
+const testimonials = [
+    {
+        name: "John Doe",
+        position: "CEO, ABC Company",
+        text: "I am very pleased with the quality of service provided by the team at our firm. They have been professional, efficient, and responsive to our needs, delivering exceptional results.",
+        image: about,
+    },
+    {
+        name: "Jane Smith",
+        position: "Marketing Director, XYZ Ltd.",
+        text: "The team exceeded our expectations with their outstanding service and attention to detail. We highly recommend their expertise!",
+        image: about,
+    },
+    {
+        name: "Michael Brown",
+        position: "COO, Tech Solutions Inc.",
+        text: "Their professionalism and dedication to delivering quality results are truly commendable. We are very satisfied with their work.",
+        image: about,
+    },
+    {
+        name: "Emily Davis",
+        position: "Founder, Green Energy Co.",
+        text: "We appreciate their innovative approach and commitment to our project. Their support has been invaluable in achieving our goals.",
+        image: about,
+    },
+    {
+        name: "Robert Wilson",
+        position: "HR Manager, Global Enterprises",
+        text: "Their customer service is top-notch, and their solutions have significantly improved our efficiency. We are grateful for their partnership.",
+        image: about,
+    }
+];
+
+
+const useScroll = () => {
+    const scrollRef = useRef(null);
+    const [leftArrow, setLeftArrow] = useState(false);
+    const [rightArrow, setRightArrow] = useState(true);
+
+    const handleScroll = () => {
+        if (scrollRef.current) {
+            const { scrollLeft, scrollWidth, clientWidth } = scrollRef.current;
+            setLeftArrow(scrollLeft > 0);
+            setRightArrow(scrollLeft + clientWidth < scrollWidth);
+        }
+    };
+
+    const scrollLeft = () => {
+        if (scrollRef.current) {
+            scrollRef.current.scrollBy({
+                left: -300,
+                behavior: 'smooth',
+            });
+        }
+    };
+
+    const scrollRight = () => {
+        if (scrollRef.current) {
+            scrollRef.current.scrollBy({
+                left: 300,
+                behavior: 'smooth',
+            });
+        }
+    };
+
+    useEffect(() => {
+        const ref = scrollRef.current;
+        if (ref) {
+            handleScroll(); // Initialize the visibility of arrows
+            ref.addEventListener('scroll', handleScroll);
+        }
+        return () => {
+            if (ref) ref.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
+    return { scrollRef, leftArrow, rightArrow, scrollLeft, scrollRight };
+};
+
 const Home = () => {
+
+    const testimonialScroll = useScroll();
 
     return (
         <div className="font-style overflow-hidden m-0">
@@ -93,13 +179,31 @@ const Home = () => {
                 </div>
             </div>
 
+            {/* About Us */}
+            <div className="container">
+                <h2 className="text-center py-2 keyword"> <span className="text-black">About</span> Us</h2>
+                <div className="row d-flex flex-sm-row-reserve justify-content-center align-items-center ">
+                    <div className="col-12 col-md-6 col-lg-6">
+                        <div className="px-2 mb-3" style={{ textAlign: "justify" }}>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus luctus urna nisi, at vulputate leo cursus vel. Vestibulum feugiat arcu posuere arcu blandit, nec efficitur massa interdum. Vivamus blandit tempor dolor, eget luctus lacus. Fusce non justo eros. Aliquam consectetur ligula sit amet lectus varius faucibus. Vivamus vitae ipsum in magna sollicitudin accumsan. Nullam dignissim elit in arcu sagittis, faucibus blandit odio lobortis. Curabitur congue risus elit, eu viverra sem consequat sed. Suspendisse porta sodales sapien, et varius magna hendrerit non.
+                        </div>
+                    </div>
+                    <div className="col-12 col-sm-6 col-md-6 ">
+                        <div className="px-2 mb-3 abouts-image-container">
+                            <img src={about} alt="abouts"  className="about-image" />
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
             {/* our Team */}
             <div className="bg-light">
                 <div className="container">
                     <div className="row d-flex justify-content-center align-items-center ">
                         <h2 className="text-center py-2 keyword"> <span className="text-black">Our</span> Team</h2>
                         <div className="col-12 col-sm-12 col-md-6 ">
-                            <div className="position-relative px-2">
+                            <div className="position-relative px-2 ">
                                 <TeamData />
                             </div>
                         </div>
@@ -120,72 +224,57 @@ const Home = () => {
             </div>
 
 
-            {/* Our Service
-            <div className=" container-fluid mb-3 m-0">
-                <h2 className="text-center py-2 keyword">
-                    <span className="text-black">Our</span> Services
+            {/* Our Testimonials */}
+
+            <div className="container pb-5 ">
+                <h2 className="text-center text-wrap py-2 keyword">
+                    <span className="text-black">Our Client </span>Testimonials
                 </h2>
-                <div className="row g-3">
-                    <div className="col-12 col-sm-12 col-md-6 ">
-                        <div className="shadow-sm bg-white h-100 p-2">
-                            <div className="row d-flex flex-wrap justify-content-center align-items-center">
-                                <div className="service-image-container col-12 col-sm-6 p-4">
-                                    <img src={consulting} alt="Consulting" className="service-image" />
-                                </div>
-                                <div className="col-12 col-sm-6">
-                                    <h5 className="text-center bold py-3">Consulting (DBD)</h5>
-                                    <span className="d-none d-sm-block" > we gave a expert guidance to optimize business strategies, improve efficiency, and drive growth. It helps organizations solve challenges and achieve their goals effectively.</span>
+
+                <div className=" testimonial-container m-0 p-4 gap-4" ref={testimonialScroll.scrollRef}>
+                    {testimonials.map((testimonial, index) => (
+                        <div key={index} className="col-12 col-md-6 col-lg-6">
+                            <div className="shadow testimonial-Card  ">
+                                <div className="d-flex flex-column justify-content-between h-100">
+                                    <div className="mb-3">
+                                        <p className="testimonial-content">“{testimonial.text}”</p>
+                                    </div>
+                                    <div className="">
+                                        <div className="d-flex justify-content-between align-items-center">
+                                            <div>
+                                                <h6 className="bold">{testimonial.name}</h6>
+                                                <small className="text-white semi-bold">{testimonial.position}</small>
+                                            </div>
+                                            <img
+                                                src={testimonial.image}
+                                                alt={testimonial.name}
+                                                className="rounded-circle"
+                                                width="50"
+                                                height="50"
+                                            />
+
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-
-                    <div className="col-12 col-sm-12 col-md-6 ">
-                        <div className="shadow-sm bg-white h-100 p-2">
-                            <div className="row d-flex flex-wrap justify-content-center align-items-center">
-                                <div className="service-image-container col-12 col-sm-6 p-4">
-                                    <img src={outSourcing} alt="Out Sourcing" className="service-image outsourcing-shadow" />
-                                </div>
-                                <div className="col-12 col-sm-6">
-                                    <h5 className="text-center bold py-3">Out Sourcing</h5>
-                                    <span className="d-none d-sm-block"> We offer expert outsourcing solutions to streamline operations, reduce costs, and enhance productivity, enabling businesses to focus on core activities and achieve sustainable growth</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="col-12 col-sm-12 col-md-6 ">
-                        <div className="shadow-sm bg-white h-100 p-2">
-                            <div className="row d-flex flex-wrap justify-content-center align-items-center">
-                                <div className="service-image-container col-12 col-sm-6 p-4">
-                                    <img src={electronicSale} alt="Electronic Sale" className="service-image electronic-shadow" />
-                                </div>
-                                <div className="col-12 col-sm-6">
-                                    <h5 className="text-center bold py-3">Electronic Sales Support</h5>
-                                    <span className="d-none d-sm-block"> We offer expert outsourcing solutions to streamline operations, reduce costs, and enhance productivity, enabling businesses to focus on core activities and achieve sustainable growth</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div className="col-12 col-sm-12 col-md-6 ">
-                        <div className="shadow-sm bg-white h-100 p-2">
-                            <div className=" d-flex flex-wrap justify-content-center align-items-center">
-                                <div className="service-image-container col-12 col-sm-6 px-4">
-                                    <img src={labsetup} alt="Lab Setup" className="service-image lab-shadow mt-0 mt-sm-5" />
-                                </div>
-                                <div className="col-12 col-sm-6 ">
-                                    <h5 className="text-center bold py-3">Lab Setup</h5>
-                                    <span className="d-none d-sm-block">We provide comprehensive lab setup solutions for Physics, Chemistry, Robotics, IoT, and Embedded Systems, equipping schools and colleges with state-of-the-art facilities to enhance practical learning and innovation.</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
+                    ))}
                 </div>
-            </div> */}
+                <div className="d-flex justify-content-end gap-3 p-2">
+                    <button className=" arrow-btn shadow" onClick={testimonialScroll.scrollLeft}
+                        disabled={!testimonialScroll.leftArrow}>
+                        <FaAngleLeft size={18} />
+                    </button>
 
+                    <button
+                        className="arrow-btn shadow"
+                        onClick={testimonialScroll.scrollRight}
+                        disabled={!testimonialScroll.rightArrow}
+                    >
+                        <FaAngleRight size={18} />
+                    </button>
+                </div>
+            </div>
 
         </div>
     );
