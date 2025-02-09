@@ -1,5 +1,5 @@
 import React from 'react';
-import "./Training.css";
+import "../../App.css";
 import AIML from '../../assets/Training/AIML.svg';
 import DataScience from "../../assets/Training/DataScience.svg";
 import FullStack from "../../assets/Training/FullStack.svg";

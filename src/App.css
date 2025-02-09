@@ -102,6 +102,7 @@ a.nav-link {
     color: var(--key-word);
 }
 
+/* Home page */
 
 .hero-image {
     width: 100%;
@@ -140,12 +141,10 @@ a.nav-link {
     line-height: 4.5 rem;
 }
 
-/* Service Image Container */
 .service-image-container {
     min-height: 200px;
 }
 
-/* Service Images */
 .service-image {
     width: 100%;
     height: 100%;
@@ -196,3 +195,59 @@ a.nav-link {
         color: #f8f7f7;
     }
 }
+
+
+/* Training */
+
+
+.training-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+}
+
+.training-image {
+    max-height: 300px;
+    object-fit: contain;
+}
+
+.fullStack {
+    filter: drop-shadow(5px 5px 15px rgba(208, 141, 241, 0.9));
+}
+
+.embedded {
+    filter: drop-shadow(5px 5px 15px rgba(244, 232, 165, 0.8));
+}
+
+.digitalMarketing {
+    filter: drop-shadow(5px 5px 15px rgba(142, 225, 142, 0.8));
+}
+
+
+/* intership */
+
+
+.intership-heroSection {
+    max-height: 500px;
+    object-fit: contain;
+    filter: drop-shadow(15px 20px 15px rgba(202, 111, 241, 0.8));
+}
+
+.intership-image-container {
+    width: 100%;
+    height: 210px;
+    max-height: 210px;
+}
+
+.intership-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4%;
+}
+
+
+/* service */

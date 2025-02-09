@@ -3,10 +3,7 @@ import about from "../../assets/About1.jpg";
 import about1 from "../../assets/About2.jpg";
 import about2 from "../../assets/About3.jpg";
 import about3 from "../../assets/About4.jpeg";
-import consulting from "../../assets/ourService/Consulting.jpg";
-import electronicSale from "../../assets/ourService/ElectronicSalesSupport.png";
-import labsetup from "../../assets/ourService/labsetup.svg";
-import outSourcing from "../../assets/ourService/Outsourcing.png";
+
 
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
@@ -123,7 +120,7 @@ const Home = () => {
             </div>
 
 
-            {/* Our Service */}
+            {/* Our Service
             <div className=" container-fluid mb-3 m-0">
                 <h2 className="text-center py-2 keyword">
                     <span className="text-black">Our</span> Services
@@ -187,7 +184,7 @@ const Home = () => {
                     </div>
 
                 </div>
-            </div>
+            </div> */}
 
 
         </div>
