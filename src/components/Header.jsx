@@ -29,7 +29,7 @@ const Header = () => {
                     onClick={() => setExpanded(!expanded)}
                 />
                 <Navbar.Collapse id="responsive-navbar-nav">
-                    <Nav className="m-sm-auto mx-2 gap-md-5 navLinks">
+                    <Nav className="m-sm-auto mx-2 gap-md-4 navLinks">
                         <Nav.Link
                             as={Link}
                             to={"/training"}
@@ -61,6 +61,14 @@ const Header = () => {
                             onClick={handleSelect}
                         >
                             Service
+                        </Nav.Link>
+                        <Nav.Link
+                            as={Link}
+                            to={"/contact"}
+                            className={location.pathname === "/contact" ? `active-link` : ""}
+                            onClick={handleSelect}
+                        >
+                            Contact Us
                         </Nav.Link>
                     </Nav>
                     <Nav></Nav>

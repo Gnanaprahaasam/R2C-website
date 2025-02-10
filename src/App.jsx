@@ -10,6 +10,7 @@ import Training from './pages/Training/Training';
 import Intership from './pages/Intership/Intership';
 import Service from './pages/Service/Service';
 import Industry from './pages/Industry/Industry';
+import Contact from './pages/Contact/Contact';
 
 function App() {
 
@@ -23,7 +24,8 @@ function App() {
         <Route path='/training' element={<Training />} />
         <Route path='/internship' element={<Intership />} />
         <Route path='/service' element={<Service />} />
-        <Route path='/industries' element={<Industry/>} />
+        <Route path='/industries' element={<Industry />} />
+        <Route path='/contact' element={<Contact />} />
       </Routes>
       <Footer />
     </HashRouter>
