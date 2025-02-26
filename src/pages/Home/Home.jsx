@@ -212,7 +212,7 @@ const Home = () => {
                                 <span>Driven by innovation and expertise, our firm is committed to delivering exceptional solutions that empower businesses. With a team of skilled professionals, we ensure excellence, integrity, and customer satisfaction in every endeavor.</span>
 
                                 <ul className="list-style lh-lg">
-                                    <li><b>Training</b> – Our expert-led training programs provide hands-on experience, equipping you with the skills and industry knowledge needed to excel in your field.</li>
+                                    <li><b>Training</b> – Our expert-led training programs provide hands-on experience, equipping you with the skills .</li>
                                     <li><b>Internship</b> – Guided by industry professionals, our structured internship programs offer real-world exposure, preparing you for a successful career.</li>
                                     <li><b>Services</b>  – Backed by a team of specialists, our comprehensive services are designed to address diverse business and technology challenges with precision.</li>
                                     <li><b>Industries</b> – With a focus on innovation, we deliver tailored solutions across various industries, ensuring efficiency and growth.</li>

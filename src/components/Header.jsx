@@ -22,7 +22,7 @@ const Header = () => {
                 <Navbar.Brand as={Link} to={"/"} className="d-flex align-items-center flex-nowrap text-nowrap gap-2">
                     <img src={logo} alt="logo" width={"80"} />
                     <span className="logo">R2C</span>
-                    <span className="logo-name">Technology</span>
+                    <span className="logo-name">Technologies</span>
                 </Navbar.Brand>
                 <Navbar.Toggle
                     aria-controls="responsive-navbar-nav"
@@ -60,7 +60,7 @@ const Header = () => {
                             className={location.pathname === "/service" ? `active-link` : ""}
                             onClick={handleSelect}
                         >
-                            Service
+                            Services
                         </Nav.Link>
                         <Nav.Link
                             as={Link}
