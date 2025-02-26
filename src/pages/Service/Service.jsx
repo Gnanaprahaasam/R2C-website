@@ -17,9 +17,9 @@ const Service = () => {
                 </div>
                 <div className="col-12 col-sm-12 col-md-6">
                     <div className='d-flex flex-column align-items-center px-5 mb-3'>
-                        <h2><span className='keyword mb-3 text-center'>Consulting </span>(DBD)</h2>
+                        <h2><span className='keyword mb-3 text-center'>Digital Business Marketing </span>(DBD)</h2>
                         <p style={{ textAlign: 'justify' }}>
-                            Business Development and Consulting (DBD) provides strategic guidance to help businesses grow and optimize their operations. Experts analyze market trends, competition, and internal processes to recommend improvements. They assist in formulating business strategies, financial planning, and risk management. Consulting services also include digital transformation, technology adoption, and operational efficiency improvements. The goal is to enhance productivity, profitability, and long-term business sustainability.
+                            Digital Business Marketing leverages online channels to enhance brand visibility and customer engagement. It includes SEO, social media, content marketing, PPC advertising, and email campaigns. Businesses use data-driven strategies to attract, convert, and retain customers. Digital marketing improves reach, customer interaction, and sales growth. It ensures long-term success in a competitive online marketplace.
                         </p>
                     </div>
                 </div>
@@ -34,7 +34,7 @@ const Service = () => {
                 </div>
                 <div className="col-12 col-sm-12 col-md-6">
                     <div className='d-flex flex-column align-items-center px-5 mb-3'>
-                        <h2><span className='keyword mb-3 text-center'>Out </span>Sourcing</h2>
+                        <h2><span className='keyword mb-3 text-center'>Out</span>sourcing</h2>
                         <p style={{ textAlign: 'justify' }}>
                             Outsourcing involves contracting external companies to handle specific business functions or processes. It helps organizations reduce costs, improve efficiency, and focus on core business activities. Common outsourced services include IT support, customer service, manufacturing, and back-office operations. Companies choose outsourcing to access specialized expertise and advanced technology without maintaining in-house teams. It enables businesses to scale operations flexibly while optimizing resource utilization.
                         </p>

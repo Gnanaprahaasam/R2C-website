@@ -70,7 +70,7 @@ const Industry = () => {
                 </div>
                 <div className="col-12 col-sm-12 col-md-6">
                     <div className='d-flex flex-column align-items-center px-5 mb-3'>
-                        <h2><span className='keyword mb-3 text-center'>S</span>olar</h2>
+                        <h2><span className='keyword mb-3 text-center'>Solar </span>& Energy</h2>
                         <p style={{ textAlign: 'justify' }}>
                             We provide end-to-end solar energy solutions, from design and installation to maintenance and monitoring. Our services include solar panel setup, energy storage solutions, and grid integration. We help businesses and individuals transition to renewable energy, reducing costs and carbon footprints. Our expertise ensures sustainable and efficient energy management.
                         </p>

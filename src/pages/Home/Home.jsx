@@ -174,9 +174,9 @@ const Home = () => {
         <div className="font-style overflow-hidden m-0">
             <div className="position-relative">
                 <img src={heroSection} alt="A.P.J kalam" className=" hero-image" />
-                <div className="position-absolute bottom-0 end-0  pb-5 quotes m-auto mx-5 px-sm-5">
+                {/* <div className="position-absolute bottom-0 end-0  pb-5 quotes m-auto mx-5 px-sm-5">
                     என்னால் முடியும் என்ற மன உறுதியை மாணவர்களிடையே உருவாக்குவதே கல்வியின் மிக உயர்ந்த நோக்கமாகும். <br /> <span className="float-end">– A.P.J அப்துல் கலாம்</span>
-                </div>
+                </div> */}
             </div>
 
             {/* About Us */}
@@ -190,7 +190,7 @@ const Home = () => {
                     </div>
                     <div className="col-12 col-sm-6 col-md-6 ">
                         <div className="px-2 mb-3 abouts-image-container">
-                            <img src={about} alt="abouts"  className="about-image" />
+                            <img src={about} alt="abouts" className="about-image" />
                         </div>
                     </div>
 
@@ -212,10 +212,10 @@ const Home = () => {
                                 <span>Driven by innovation and expertise, our firm is committed to delivering exceptional solutions that empower businesses. With a team of skilled professionals, we ensure excellence, integrity, and customer satisfaction in every endeavor.</span>
 
                                 <ul className="list-style lh-lg">
+                                    <li><b>Projects</b> – With a focus on innovation, we deliver tailored solutions across various industries, ensuring efficiency and growth.</li>
                                     <li><b>Training</b> – Our expert-led training programs provide hands-on experience, equipping you with the skills .</li>
                                     <li><b>Internship</b> – Guided by industry professionals, our structured internship programs offer real-world exposure, preparing you for a successful career.</li>
                                     <li><b>Services</b>  – Backed by a team of specialists, our comprehensive services are designed to address diverse business and technology challenges with precision.</li>
-                                    <li><b>Industries</b> – With a focus on innovation, we deliver tailored solutions across various industries, ensuring efficiency and growth.</li>
                                 </ul>
                             </div>
                         </div>

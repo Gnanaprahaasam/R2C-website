@@ -48,16 +48,16 @@ const Header = () => {
                         </Nav.Link>
                         <Nav.Link
                             as={Link}
-                            to={"/industries"}
-                            className={location.pathname === "/industries" ? `active-link` : ""}
+                            to={"/projects"}
+                            className={location.pathname === "/projects" ? `active-link` : ""}
                             onClick={handleSelect}
                         >
-                            Industries
+                            Projects
                         </Nav.Link>
                         <Nav.Link
                             as={Link}
-                            to={"/service"}
-                            className={location.pathname === "/service" ? `active-link` : ""}
+                            to={"/services"}
+                            className={location.pathname === "/services" ? `active-link` : ""}
                             onClick={handleSelect}
                         >
                             Services

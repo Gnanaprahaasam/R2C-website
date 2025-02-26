@@ -37,7 +37,7 @@ const Footer = () => {
             <hr />
             <div className="d-flex justify-content-center align-items-center flex-wrap pb-2">
                 <div>Copyright &#169; 2025 &nbsp; </div>
-                <div>| &nbsp;<Link to="https://R2CTechnology.com" className="keyword">www.R2CTechnology.com</Link> &nbsp; |</div>
+                <div>| &nbsp;<Link to="https://R2C.co.in" className="keyword">www.R2C.co.in</Link> &nbsp; |</div>
                 <div>&nbsp; All rights reserved</div>
             </div>
         </div>
