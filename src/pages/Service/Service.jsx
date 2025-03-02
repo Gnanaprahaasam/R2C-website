@@ -1,18 +1,18 @@
 import React from 'react';
 import "../../App.css";
-import consulting from "../../assets/Service/Consulting.svg";
-import electronicSale from "../../assets/Service/ElectronicSalesSupport.png";
-import labsetup from "../../assets/Service/labsetup.svg";
+import DigitalMarketing from "../../assets/Service/DigitalMarketing.svg";
+import electronicSale from "../../assets/Service/saleSupport.svg";
+import labsetup from "../../assets/Service/RoboticLab.svg";
 import outSourcing from "../../assets/Service/OutSourcing.svg";
 
 const Service = () => {
     return (
         <div className="container font-style mt-5">
-            {/* Consulting*/}
+            {/* DigitalMarketing*/}
             <div className="row d-flex flex-sm-row-reverse justify-content-center align-items-center g-3 ">
                 <div className="col-12 col-sm-12 col-md-6">
                     <div className="training-image-container mb-3">
-                        <img src={consulting} alt="consulting" className='training-image fullStack' />
+                        <img src={DigitalMarketing} alt="DigitalMarketing" className='training-image fullStack' />
                     </div>
                 </div>
                 <div className="col-12 col-sm-12 col-md-6">
@@ -69,7 +69,7 @@ const Service = () => {
                 </div>
                 <div className="col-12 col-sm-12 col-md-6">
                     <div className='d-flex flex-column align-items-center px-5 mb-3'>
-                        <h2><span className='keyword mb-3 text-center'>Lab </span>Setup</h2>
+                        <h2><span className='keyword mb-3 text-center'>Robotic Lab </span>Setup</h2>
                         <p style={{ textAlign: 'justify' }}>
                             Lab setup involves designing and equipping a laboratory with the necessary infrastructure, tools, and technology. It includes selecting appropriate equipment, ensuring safety compliance, and optimizing the workspace for efficiency. Proper lab setup enhances research, testing accuracy, and innovation capabilities. It also involves training personnel, implementing quality control standards, and maintaining regulatory compliance. A well-structured lab setup ensures smooth operations and supports scientific or industrial advancements.
                         </p>
